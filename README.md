@@ -1,10 +1,18 @@
 # WebTrabajo1
 ### Para https://crueltyfree.peta.org/
-**Elemento        etiqueta    propiedad        Identificador**\\
+**Elemento        etiqueta    propiedad        Identificador**
+
+
 input search    input       name              s\\
+
+
 Descripcion     div         class             testing-policy-text\\
 
-**links**\\
+
+
+**links**
+
+
 Buscar por region https://crueltyfree.peta.org/region/?region=<region>\\
 ejm: https://crueltyfree.peta.org/region/?region=ecuador\\
 ---
