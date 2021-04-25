@@ -35,3 +35,9 @@ ejm: https://crueltyfree.peta.org/company/amorus-usa/
 | resultados | div | class | search-container |
 | descripcion | div | class | description |
 | valor descripcion | a | <> | <> |
+
+**links**
+
+https://www.petalatino.com/?s=<clave>
+
+ejm: https://www.petalatino.com/?s=avon
