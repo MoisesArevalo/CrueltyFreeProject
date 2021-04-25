@@ -3,12 +3,7 @@
 |Elemento | etiqueta | propiedad | Identificador|
 |--|--|--|--|
 | input search | input | name | s |
-
-
-Descripcion     div         class             testing-policy-text\\
-
-
-
+| Descripcion | div | class | testing-policy-text |
 **links**
 
 
