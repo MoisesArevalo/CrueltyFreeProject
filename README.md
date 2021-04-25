@@ -26,3 +26,12 @@ https://crueltyfree.peta.org/company/<clave>/
   
 ejm: https://crueltyfree.peta.org/company/amorus-usa/
 
+---
+### Para https://www.petalatino.com/
+
+|Elemento | etiqueta | propiedad | Identificador|
+|--|--|--|--|
+| input search | input | name | s |
+| resultados | div | class | search-container |
+| descripcion | div | class | description |
+| valor descripcion | a | <> | <> |
