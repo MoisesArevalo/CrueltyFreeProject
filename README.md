@@ -4,10 +4,14 @@
 |--|--|--|--|
 | input search | input | name | s |
 | Descripcion | div | class | testing-policy-text |
+
+
 **links**
 
 
-Buscar por region https://crueltyfree.peta.org/region/?region=<region>\\
+Buscar por region https://crueltyfree.peta.org/region/?region=<region>
+  
+  
 ejm: https://crueltyfree.peta.org/region/?region=ecuador\\
 ---
 Buscar por compania o producto:
