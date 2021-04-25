@@ -2,8 +2,7 @@
 ### Para https://crueltyfree.peta.org/
 |Elemento | etiqueta | propiedad | Identificador|
 |--|--|--|--|
-
-|input search|input|name|s|
+| input search | input | name | s |
 
 
 Descripcion     div         class             testing-policy-text\\
