@@ -4,6 +4,9 @@
 |--|--|--|--|
 | input search | input | name | s |
 | Descripcion | div | class | testing-policy-text |
+| Lista de resultados | ul | class | search-results |
+| items | a | class | link |
+| nombre item | a | title | <> |
 
 
 **links**
