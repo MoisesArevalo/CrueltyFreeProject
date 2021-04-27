@@ -1,0 +1,21 @@
+#contenedor, #busqueda, #carrusel{
+    background: rgba(255, 243, 243, 0.281);
+}
+.status{
+  margin: auto;
+}
+h5{
+    color: rgb(10, 10, 10);
+}
+
+.btn{
+    color:rgb(20, 20, 20);
+    background:#d4cccc;
+    border:0px;
+    width:1020px;
+    height:35px;
+}
+
+#cruelty, #noticias, #productos{
+    background: rgb(247, 238, 238);
+}
