@@ -28,33 +28,33 @@ const WAIT = 'https://giphy.com/embed/PWfHC8ogZpWcE';
 app.post('/search', async(req,res)=>{
   //console.log(test);
   // Status de la empresa
-  var img =WAIT;
+  var gif =WAIT;
   var status = await scraper.search(1,req.body.marca);
   if(status[0].includes('Warning!')){
-    img =CRY;
+    gif =CRY;
   }else if (status[0].includes('NOT test')) {
-    img = HAPPY;
+    gif = HAPPY;
   }else if (status[0].includes('found')) {
-    img = '';
+    gif = '';
   }
   /// Empresas cruelty Free
   var business = await scraper.search(2,'Ecuador');
   var image = [];
   //console.log(business);
-  for(var i=0; i<business.length;i++){
-    var aux = await apis.getImage(business[i]);
-    image.push({ aux });
-  }
+  // for(var i=0; i<business.length;i++){
+  //   var aux = await apis.getImage(business[i]);
+  //   image.push(aux);
+  // }
   //console.log(imagen);
   // business.forEach( (elem)=>{
   //   var z = apis.getImage(elem);
   //   //console.log(elem);
   // } );
   //console.log(business);
-
+// console.log(image[0],business.length.toString());
   ///// Noticias relacionadas
   var news = await scraper.search(0,req.body.marca);
-  return res.render('index',{status: status[0], img:img, business: business, news:news, business:business, images : image});
+  return res.render('index',{status: status[0], img:gif, business: business, news:news, business:business,images:['https://i.pinimg.com/originals/14/0d/2b/140d2b4f954537558d775a1551cc3c1f.jpg']});//, images : image
 });
 // static files
 app.use(express.static(path.join(__dirname,'public')));

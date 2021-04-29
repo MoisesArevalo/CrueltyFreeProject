@@ -20,6 +20,7 @@ async function getImage(name){
   return response.data.value[0].url;
  }).catch(function (error) {
  	console.error('Error');
+  console.error(error);;
  });
  //console.log(r);
  return r;
