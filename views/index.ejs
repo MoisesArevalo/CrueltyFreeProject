@@ -160,13 +160,20 @@
       <div class="col-sm-4">
         <div class="container" id="noticias">
           <h4 class="text-center">Noticias</h4>
+          <% var n_news= news.length/3 %>
+          <% for (var i=0; i<news.length/3; i++){ %>
+          <a class="text-decoration-none" target="_blank" href="<%= news[i] %>">
           <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Noticia 1</div>
+            <div class="card-header"><%= news[n_news] %></div>
             <div class="card-body">
-              <img src="img/conejo.jpg" class="img-fluid" alt="200">
+              <img src="<%= news[n_news+1] %>" class="img-fluid" alt="200">
+
             </div>
           </div>
-          <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+          </a>
+          <% n_news+=2 %>
+          <% } %>
+          <!-- <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
             <div class="card-header">Noticia 2</div>
             <div class="card-body">
               <img src="img/conejo.jpg" class="img-fluid" alt="200">
@@ -177,7 +184,7 @@
             <div class="card-body">
               <img src="img/conejo.jpg" class="img-fluid" alt="200">
             </div>
-          </div>
+          </div> -->
 
         </div>
       </div>
