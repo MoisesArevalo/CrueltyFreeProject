@@ -326,15 +326,15 @@ Se extrae la lista de productos de ali express
 */
 function getValuesProduct(data){
   var products =[];
-  data = test;
+  //data = test;
   data.docs.forEach(elem =>{
-    products.push({url : elem.product_detail_url.substring(2, elem.product_detail_url.length) ,
+    products.push({url : elem.product_detail_url ,
     title: elem.product_title,
     price: elem.app_sale_price,
     image: elem.product_main_image_url});
     //console.log(elem.product_detail_url);
   });
-  console.log(products);
+  //console.log(products);
   return products;
 }
 async function getProducts(product) {
@@ -342,7 +342,7 @@ async function getProducts(product) {
     method: 'GET',
     url: 'https://magic-aliexpress1.p.rapidapi.com/api/products/search',
     params: {
-      name: 'Cruelty Free lipstick',
+      name: 'Cruelty Free '+ product,
       sort: 'NEWEST_DESC',
       page: '1',
       shipFromCountry: 'CN',
@@ -355,8 +355,9 @@ async function getProducts(product) {
   };
 
   const products = await axios.request(options).then(async function(response) {
-    console.log(response.data);
+    return getValuesProduct(response.data);
   }).catch(function(error) {
+    console.log('Error en getProducts');
     console.error(error);
   });
   // var options = {
@@ -377,9 +378,10 @@ async function getProducts(product) {
   // }).catch(function(error) {
   //   console.error(error);
   // });
-  // return products;
+  //console.log(products);
+  return products;
 }
-getValuesProduct();
+//getValuesProduct();
 //getProducts('');
 module.exports = {
   getImage,
