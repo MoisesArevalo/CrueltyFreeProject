@@ -69,7 +69,11 @@ app.post('/search', async (req, res) => {
   // console.log(image)
   /// *** Productos relacionados
   console.log(req.body.producto);
-  const products = await apis.getProducts(req.body.producto);
+  var producto = req.body.producto.trim();
+  if(producto===''){
+    producto = 'Cruelty Free Cosmetics';
+  }
+  const products = await apis.getProducts(producto);
   //console.log(products);
   //console.log(typeof products);
   //const products = apis.getValuesProduct('');
