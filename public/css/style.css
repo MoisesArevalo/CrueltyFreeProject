@@ -6,7 +6,9 @@
   padding: 10px 0;
   font-family: 'New Tegomin', serif;
 }
+.logo{
 
+}
 .card{
   display: inline-block;
 }
@@ -33,4 +35,15 @@ h5{
 
 #cruelty, #noticias, #productos{
     background: rgb(247, 238, 238);
+}
+
+@media  (max-width: 575px) {
+  .logo{
+    max-width: 15%;
+    display: block;
+    margin: auto;
+  }
+  .w-100{
+    height: 200px;
+  }
 }
