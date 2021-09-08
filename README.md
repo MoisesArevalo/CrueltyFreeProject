@@ -1,4 +1,5 @@
-# WebTrabajo1
+# Proyecto para Web
+El proyecto consiste en dar información de maltrato animal realizado en empresas. Por que mediante web scraping se obtiene información en paginas de peta. Y mediante el uso de una API para ALIEXPRESS, se le recomienda al usuario productos que no fueron probados en animales.
 ### Para https://crueltyfree.peta.org/
 |Elemento | etiqueta | propiedad | Identificador|
 |--|--|--|--|
